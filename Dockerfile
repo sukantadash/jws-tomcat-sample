@@ -14,7 +14,7 @@ COPY src ./src
 RUN mvn package -DskipTests
 
 # Stage 2: Create final runtime container with JWS (Tomcat)
-FROM registry.redhat.io/jboss-webserver-5/jws58-openjdk17-openshift-rhel8
+FROM registry.access.redhat.com/jboss-webserver-5/jws58-openjdk17-openshift-rhel8
 
 WORKDIR /opt/jboss/webserver/
 
